@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_Linear">
+
+    <fragment
+        android:id="@+id/navigation_Linear"
+        android:name="com.example.lecture24.ui.linear.LinearFragment"
+        android:label="@string/linear"
+        tools:layout="@layout/fragment_linear" />
+
+    <fragment
+        android:id="@+id/navigation_Constraint"
+        android:name="com.example.lecture24.ui.constraint.ConstraintFragment"
+        android:label="@string/constraint"
+        tools:layout="@layout/fragment_constraint" />
+
+</navigation>
