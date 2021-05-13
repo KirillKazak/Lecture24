@@ -23,10 +23,9 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         button.setOnClickListener(View.OnClickListener {
-            val intent = Intent(baseContext, MainActivity2::class.java)
-            intent.putExtra(EMAIL, editTextEmail.text.toString())
-            intent.putExtra(PASSWORD, editTextPassword.text.toString())
-            startActivity(intent)
+            startActivity(Intent(baseContext, MainActivity2::class.java).putExtra(EMAIL, editTextEmail.text.toString()).apply {
+                putExtra(PASSWORD, editTextPassword.text.toString())
+            })
         })
     }
 }
